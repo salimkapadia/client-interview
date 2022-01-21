@@ -8,3 +8,9 @@ will only be stored on the machine that executes the apply. When working in a te
 Also, in the event of data loss, you would want to have the state stored in an s3 bucket to prevent data loss.
 
 ## Solution-2
+- The above with backend state being pushed to an s3 bucket
+- Specifying provider version.
+- Specifying aws region.
+
+## Solution-3
+- DRY (Do Not Repeat Yourself) - merge some of the resources together.
