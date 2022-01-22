@@ -11,6 +11,4 @@ Also, in the event of data loss, you would want to have the state stored in an s
 - The above with backend state being pushed to an s3 bucket
 - Specifying provider version.
 - Specifying aws region.
-
-## Solution-3
-- DRY (Do Not Repeat Yourself) - merge some of the resources together.
+- take in tags

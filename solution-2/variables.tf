@@ -9,3 +9,10 @@ variable "region" {
   description = "The region in which to associate resources too"
   type        = string
 }
+
+
+variable "tags" {
+  default     = {}
+  description = "The tags to apply to all resources"
+  type        = map(string)
+}

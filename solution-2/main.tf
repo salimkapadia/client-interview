@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "s3" {
   bucket = "${var.repository_name}-${terraform.workspace}-Bucket"
-  tags   = local.tags
+  tags   = merge(var.tags, local.tags)
   acl    = "private"
   server_side_encryption_configuration {
     rule {
